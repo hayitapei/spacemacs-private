@@ -30,7 +30,7 @@
 ;;; Code:
 
 (defconst mao18-packages
-  '()
+  '( youdao-dictionary)
   "The list of Lisp packages required by the mao18 layer.
 
 Each entry is either:
