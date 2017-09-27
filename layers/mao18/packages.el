@@ -30,7 +30,7 @@
 ;;; Code:
 
 (defconst mao18-packages
-  '( youdao-dictionary)
+  '(youdao-dictionary)
   "The list of Lisp packages required by the mao18 layer.
 
 Each entry is either:
@@ -58,5 +58,12 @@ Each entry is either:
       - A list beginning with the symbol `recipe' is a melpa
         recipe.  See: https://github.com/milkypostman/melpa#recipe-format")
 
+(defun mao18/init-youdao-dictionary()
+  (use-package youdao-dictionary
+    :defer t
+    :init
+    (spacemacs/set-leader-keys "oy" 'youdao-dictionary-search-at-point+)
+    )
+  )
 
 ;;; packages.el ends here
