@@ -310,7 +310,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
 (setq tramp-ssh-controlmaster-options
       "-o ControlMaster=auto -o ControlPath='tramp.%%C' -o ControlPersist=no")
 
-(setq-default dotspacemacs-startup-banner '"~/Pictures/funny.png")
+;; (setq-default dotspacemacs-startup-banner '"~/Pictures/funny.png")
 
   )
 
